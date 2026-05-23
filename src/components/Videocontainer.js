@@ -26,7 +26,7 @@ const Videocontainer = () => {
 
   return (
   <div className="flex flex-wrap">
-  {videos.map((video) => (
+   {videos ?.map((video) => ( 
     <div key={video.id} className="w-1/4  h-30 p-2 hover:scale-105 hover:shadow-xl 
      cursor-pointer transform transition duration-300 ease-in-out">
       <Link to = {"/watch?v=" + video.id}>
