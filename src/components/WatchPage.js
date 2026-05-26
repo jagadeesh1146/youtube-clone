@@ -4,6 +4,8 @@ import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 import { MY_GOOGLE_API_KEY } from "../utils/constants";
 import Commentscontainer from "./Commentscontainer";
+import Livechat from "./Livechat";
+import Chatinput from "./Chatinput";
 
 const WatchPage = () => {
   const dispatch = useDispatch();
@@ -65,9 +67,16 @@ const WatchPage = () => {
       
       
     )}
+   
    <Commentscontainer/>
+   
 
   </div>
+   <div >
+      <Livechat/>
+      <Chatinput/>
+    </div>
+    
   
 </div>
 
